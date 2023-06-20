@@ -1,8 +1,10 @@
-const direction = ["&mapstoright;", "&mapstoleft;", "&mapstoup;"]
-const random = Math.floor(Math.random() * direction.length)
+const direction = ["&rightarrow;", "&leftarrow;", "&uparrow;"]
+const btn = document.getElementById("pick-button")
+const txt = document.getElementById("direction-text")
 
 function writeDirection() {
-  document.getElementById("direction-text").innerHTML = direction[random]
+  const random = Math.floor(Math.random() * direction.length)
+  txt.innerHTML = direction[random]
 }
 
-document.getElementById("pick-button").addEventListener("click", writeDirection)
+btn.addEventListener("click", writeDirection)
