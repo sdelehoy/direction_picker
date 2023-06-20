@@ -1,3 +1,6 @@
 .direction-box {
   height: 50px;
 }
+body {
+  background-color: purple;
+}
